@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,600');
+html {
+  font-family: 'Cabin', sans-serif;
+  font-size: 24px;
+}
+.fader h2 {
+  opacity: 1;
+  transition: opacity .4s ease;
+  font-weight: 600;
+}
+.fader h3 {
+  opacity: 1;
+  transition: opacity .7s ease;
+  transition-delay: .5s;
+  font-weight: 400;
+  font-size: 20px;
+}
+.faded h2 {
+  opacity: 0 !important;
+  transition: opacity .4s;
+}
+.faded h3 {
+  opacity: 0 !important;
+  transition-delay: .5s;
+  transition: opacity .7s ease;
+}
+
+.counter-circle {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+.counter-circle.index {
+  background-color: #ff6c6c;
+}
+.counter-circle:not(.index):hover {
+  background-color: rgba(0, 0, 0, 0.7);
+  transition: background-color .4s ease;
+}
